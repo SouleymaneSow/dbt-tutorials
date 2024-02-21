@@ -11,22 +11,26 @@ dbt connects to and runs SQL against your database, warehouse, lake, or query en
 The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Spark**, **Redshift**, **Snowflake**, etc...
 
 ### Using the starter project
-# Firslty, you create your projects folder:
+#### Firslty, you create your projects folder:
  - mkdir dbt_tutorials
 
-# Secondly, you create an environnement, activate it and install dbt with the adaptater postgres :
+#### Secondly, you create an environnement, activate it and install dbt with the adaptater postgres :
  - python3 -m venv dbt-venv
  - ./venv/Scripts/activate (activate the environment for Windows) or source dbt-venv/bin/activate (activate the environment for Mac and Linux )
  - python -m pip install dbt-postgres
    
-# Then you initialize your dbt projects with : dbt init [project_name]. 
-    - example : I use **dbt init dbt_tutorials**.
+#### Then you initialize your dbt projects with : dbt init [project_name]. 
+ - example : I use **dbt init dbt_tutorials**.
 
- When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse. A profile contains all the details required to connect to your data warehouse.
- The profiles.yml file is located on **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**
- 
+#### Configure your profiles.yml file
+ - When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse.
+ - A profile contains all the details required to connect to your data warehouse.
+ - The profiles.yml file is located on **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
+ - The image below shows my example of profiles.yml file with the adaptater postgres
+    ![profiles.yml](my-profiles-postgres.PNG) 
 
-Try running the following commands:
+
+#### Try running the following commands:
 - dbt debug to verify the connection with postgresql
 - dbt run
 - dbt test
