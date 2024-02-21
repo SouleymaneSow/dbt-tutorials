@@ -9,7 +9,7 @@ you will learn how to install dbt, initialize a new project and then publish you
 - dbt connects to and runs SQL against your database, warehouse, lake, or query engine. These SQL-speaking platforms are collectively referred to as data platforms. dbt connects with data platforms by using a dedicated adapter plugin for each. Plugins are built as Python modules that dbt Core discovers if they are installed on your system
 - The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Spark**, **Redshift**, **Snowflake**, etc...
 
-   ![dbt-transform architecture](dbt-transform.PNG) 
+   ![dbt-transform architecture](dbt-transform.png) 
 
   
 ### Using the starter project
