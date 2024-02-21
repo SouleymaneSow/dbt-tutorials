@@ -25,7 +25,7 @@ Then you initialize your dbt projects with : dbt init [project_name].
 When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse. A profile contains all the details required to connect to your data warehouse.
 
 The profiles.yml file is located on **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
-The image below shows an example of the profiles.yml file with the adaptater postgres ![profiles.yml](dbt_tutorials/my-profiles-postgres.png)
+The image below shows an example of the profiles.yml file with the adaptater postgres 
 
 
  
