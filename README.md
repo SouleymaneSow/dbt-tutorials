@@ -20,11 +20,12 @@ Secondly, you create an environnement, activate it and install dbt with the adap
  - python -m pip install dbt-postgres
    
 Then you initialize your dbt projects with : dbt init [project_name]. 
-    - example : I use **dbt init dbt_tutorials**.
+ - example : I use **dbt init dbt_tutorials**.
 
 When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse. A profile contains all the details required to connect to your data warehouse.
 The profiles.yml file is located on **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
-The image below shows an example of the profiles.yml file with the adaptater postgres
+The image below shows an example of the profiles.yml file with the adaptater postgres ![profiles.yml](my-profiles-postgres.png)
+
 
  
 
