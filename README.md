@@ -21,11 +21,13 @@ The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Sp
    
 #### Then you initialize your dbt projects with : dbt init [project_name]. 
  - example : I use **dbt init dbt_tutorials**.
+   
 - When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse.
 - A profile contains all the details required to connect to your data warehouse.
 
 - The profiles.yml file is located on **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
-- The image below shows an example of ![profiles.yml](my-profiles-postgres.PNG) with the adaptater postgres.
+- The image below shows my example of profiles.yml file with the adaptater postgres
+    ![profiles.yml](my-profiles-postgres.PNG) 
 
 
 Try running the following commands:
