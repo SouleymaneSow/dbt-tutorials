@@ -2,14 +2,16 @@ Welcome to your new dbt project!
 you will learn how to install dbt, initialize a new project and then publish your project to a GitHub repository.
 
 ### What is Dbt?
-**dbt (data build tool)** enables analytics engineers to transform data in their warehouses by simply writing select statements. 
-dbt handles turning these select statements into tables and views.
+- **dbt (data build tool)** enables analytics engineers to transform data in their warehouses by simply writing select statements. dbt handles turning these select statements into tables and views.
 
-dbt does the T in ELT (Extract, Load, Transform) processes – it doesn’t extract or load data, but it’s extremely good at transforming data that’s already loaded into your warehouse. 
+- dbt does the T in ELT (Extract, Load, Transform) processes – it doesn’t extract or load data, but it’s extremely good at transforming data that’s already loaded into your warehouse. 
 
-dbt connects to and runs SQL against your database, warehouse, lake, or query engine. These SQL-speaking platforms are collectively referred to as data platforms. dbt connects with data platforms by using a dedicated adapter plugin for each. Plugins are built as Python modules that dbt Core discovers if they are installed on your system
-The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Spark**, **Redshift**, **Snowflake**, etc...
+- dbt connects to and runs SQL against your database, warehouse, lake, or query engine. These SQL-speaking platforms are collectively referred to as data platforms. dbt connects with data platforms by using a dedicated adapter plugin for each. Plugins are built as Python modules that dbt Core discovers if they are installed on your system
+- The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Spark**, **Redshift**, **Snowflake**, etc...
 
+   ![dbt-transform architecture](dbt-transform.PNG) 
+
+  
 ### Using the starter project
 #### Firslty, you create your projects folder:
  - mkdir dbt_tutorials
