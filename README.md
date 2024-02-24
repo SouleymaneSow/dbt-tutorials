@@ -16,7 +16,8 @@ you will learn how to install dbt, initialize a new project and then publish you
 #### Firslty, you create your projects folder:
  - mkdir dbt_tutorials
 
-#### Secondly, you create an environnement, activate it and install dbt with the adaptater postgres :
+#### Secondly, you create an environnement, activate it and install dbt with the adaptater postgres.
+PS: You can choice aonther adapters or judst do python -m pip install dbt-core
  - python3 -m venv dbt-venv
  - ./venv/Scripts/activate (activate the environment for Windows) or source dbt-venv/bin/activate (activate the environment for Mac and Linux )
  - python -m pip install dbt-postgres
