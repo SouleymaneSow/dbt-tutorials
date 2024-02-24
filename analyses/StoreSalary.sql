@@ -4,4 +4,4 @@ SELECT
             
     FROM {{ref('finale')}} f
     
-    GROUP BY 1
+    GROUP BY 1 

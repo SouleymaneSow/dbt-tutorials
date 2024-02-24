@@ -1,0 +1,28 @@
+models:
+  - name: sales
+    columns: 
+      - name: first_name
+        tests:
+          - string_not_empty
+
+
+  - name: finale
+    columns: 
+      - name: genre
+        tests:
+          - string_not_empty
+
+
+  - name: finale
+    columns: 
+      - name: id
+        tests:
+          - unique
+          - not_null
+  
+  - name: sales_per_dpt
+    columns: 
+      - name: department
+        tests:
+          - accepted_values:
+             values: ['Operations','Informatique', 'Finance','comptable','Engineering','HR']

@@ -1,6 +1,5 @@
 {{ config(materialized='table') }}
 
--- Create the table using a Common Table Expression (CTE)
 SELECT
     t.*,
     s.postal, s.genre
@@ -10,4 +9,3 @@ LEFT JOIN
     {{ ref('complements') }} s
 ON
     t.id = s.id
-
