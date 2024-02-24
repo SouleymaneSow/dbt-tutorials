@@ -17,7 +17,7 @@ you will learn how to install dbt, initialize a new project and then publish you
  - mkdir dbt_tutorials
 
 #### Secondly, you create an environnement, activate it and install dbt with the adaptater postgres.
-PS: You can choice aonther adapters or judst do python -m pip install dbt-core
+ - PS: You can choice another adapters or judst do **python -m pip install dbt-core**
  - python3 -m venv dbt-venv
  - ./venv/Scripts/activate (activate the environment for Windows) or source dbt-venv/bin/activate (activate the environment for Mac and Linux )
  - python -m pip install dbt-postgres
@@ -28,7 +28,7 @@ PS: You can choice aonther adapters or judst do python -m pip install dbt-core
 #### Configure your profiles.yml file
  - When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse.
  - A profile contains all the details required to connect to your data warehouse.
- - dbt will look the profiles.yml file in the current working directory first, then in  **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
+ - dbt will look the profiles.yml file in the current working directory first, then in  **~/.dbt** or **C:/Users/your_name/.dbt/profiles.yml**.
  - The image below shows my example of profiles.yml file with the adaptater postgres
     ![profiles.yml](my-profiles-postgres.PNG) 
 
