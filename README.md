@@ -2,14 +2,16 @@ Welcome to your new dbt project!
 you will learn how to install dbt, initialize a new project and then publish your project to a GitHub repository.
 
 ### What is Dbt?
-**dbt (data build tool)** enables analytics engineers to transform data in their warehouses by simply writing select statements. 
-dbt handles turning these select statements into tables and views.
+- **dbt (data build tool)** enables analytics engineers to transform data in their warehouses by simply writing select statements. dbt handles turning these select statements into tables and views.
 
-dbt does the T in ELT (Extract, Load, Transform) processes – it doesn’t extract or load data, but it’s extremely good at transforming data that’s already loaded into your warehouse. 
+- dbt does the T in ELT (Extract, Load, Transform) processes – it doesn’t extract or load data, but it’s extremely good at transforming data that’s already loaded into your warehouse. 
 
-dbt connects to and runs SQL against your database, warehouse, lake, or query engine. These SQL-speaking platforms are collectively referred to as data platforms. dbt connects with data platforms by using a dedicated adapter plugin for each. Plugins are built as Python modules that dbt Core discovers if they are installed on your system
-The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Spark**, **Redshift**, **Snowflake**, etc...
+- dbt connects to and runs SQL against your database, warehouse, lake, or query engine. These SQL-speaking platforms are collectively referred to as data platforms. dbt connects with data platforms by using a dedicated adapter plugin for each. Plugins are built as Python modules that dbt Core discovers if they are installed on your system
+- The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Spark**, **Redshift**, **Snowflake**, etc...
 
+   ![dbt-transform architecture](dbt-transform.png) 
+
+  
 ### Using the starter project
 #### Firslty, you create your projects folder:
  - mkdir dbt_tutorials
@@ -25,7 +27,7 @@ The most popular adaptaters are **Postgres**, **BigQuery**, **Databricks**, **Sp
 #### Configure your profiles.yml file
  - When you call dbt from the cli, dbt analyses the **dbt_projects.yml** and gets the **profiles.yml** that dbt needs to connect to our data warehouse.
  - A profile contains all the details required to connect to your data warehouse.
- - The profiles.yml file is located on **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
+ - dbt will look the profiles.yml file in the current working directory first, then in  **~/.dbt** or **C:\Users\your_name\.dbt\profiles.yml**.
  - The image below shows my example of profiles.yml file with the adaptater postgres
     ![profiles.yml](my-profiles-postgres.PNG) 
 
