@@ -1,3 +1,9 @@
 {% macro double_salary(salary_column) %}
-  ({{salary_column}} * 2)
+SELECT 
+  first_name, 
+  last_name, 
+  genre,
+  salary,
+  salary*2 as double_salary
+from {{ref('finale')}}
 {% endmacro %}

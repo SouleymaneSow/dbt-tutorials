@@ -1,12 +1,14 @@
 models:
   - name: sales
-    columns: 
+    description: "One record per employees "
+    columns:
       - name: first_name
         tests:
           - string_not_empty
 
 
   - name: finale
+    description: "Finale table contains all information of employees"
     columns: 
       - name: genre
         tests:
@@ -14,6 +16,7 @@ models:
 
 
   - name: finale
+    description: "Finale table contains all information of employees"
     columns: 
       - name: id
         tests:
@@ -21,6 +24,7 @@ models:
           - not_null
   
   - name: sales_per_dpt
+    description: "salary groups per department"
     columns: 
       - name: department
         tests:
