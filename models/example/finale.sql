@@ -4,7 +4,7 @@ SELECT
     t.*,
     s.postal, s.genre
 FROM
-     db.dbt_jules.sales t
+     {{source('jule','sale')}} t
 LEFT JOIN
     {{ ref('complements') }} s
 ON

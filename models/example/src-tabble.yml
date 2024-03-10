@@ -1,0 +1,7 @@
+sources:
+  - name: jule
+    database: db
+    schema: dbt_jules
+    tables:
+      - name: sale
+        identifier: sales
