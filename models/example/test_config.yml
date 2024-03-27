@@ -47,3 +47,4 @@ models:
         tests:
           - accepted_values:
              values: ['Operations','Informatique', 'Finance','comptable','Engineering','HR']
+          - string_not_empty
